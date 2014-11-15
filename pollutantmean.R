@@ -6,4 +6,6 @@ for (i in id) { ## previous version could read only 1 id, but not a range
     frame <- read.csv(file_path_vector[i],header=T)
     data_vector <-c(data_vector,frame[[pollutant]]) ## store pollutant data in vector
 	}
+mean_data <- mean(data_vector, na.rm = TRUE)
+return(mean_data)
 }
