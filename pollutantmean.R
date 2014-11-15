@@ -7,5 +7,5 @@ for (i in id) { ## previous version could read only 1 id, but not a range
     data_vector <-c(data_vector,frame[[pollutant]]) ## store pollutant data in vector
 	}
 mean_data <- mean(data_vector, na.rm = TRUE)
-return(mean_data)
+return(round(mean_data,3))
 }
